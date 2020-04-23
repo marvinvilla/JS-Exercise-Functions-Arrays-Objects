@@ -75,8 +75,15 @@ function temperatureCtoF(celsius) {
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(/* code here */) {
+function temperatureInF(temp,unit) {
   /* code here */
+  if (unit === 'C'){
+    return Math.round(temp * (9/5) + 32) +'F';
+  }
+  else{
+    return temp + 'F';
+  }
+
 }
 
 
@@ -96,8 +103,13 @@ function temperatureInF(/* code here */) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
+function makePersonObject(id, name, email) {
   /* code here */
+  return {
+    id: id,
+    name: name,
+    email: email,
+  };
 }
 
 /**
